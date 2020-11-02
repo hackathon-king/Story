@@ -1,0 +1,49 @@
+
+Mode of thinking:
+Bottom thinking: language conversion, compiler conversion, memory model, runtime mechanism
+Abstract thinking: object oriented, component encapsulation, design pattern, architecture pattern
+Decomposition vs abstraction
+
+Design Principles:
+
+S.O.L.I.D, Object Combination VS Class Inheritance, Encapsulate Change Points, Target Interface VS Target Implementation
+设计原则：
+Single Responsibility Principle：单一职责原则 
+Open Closed Principle：开闭原则 
+Liskov Substitution Principle：里氏替换原则 
+Interface Segregation Principle：接口隔离原则 
+Dependence Inversion Principle：依赖倒置原则
+对象组合VS类继承，封装变化点，针对接口VS针对实现
+Refactoring techniques: iterative design
+
+Static -> dynamic, early binding -> late binding, inheritance -> composition, compile-time dependency -> runtime dependency, tight coupling -> loose coupling
+
+Pattern classification:
+
+Creation type, structure type, behavior type
+
+Package change angle:
+
++ Component collaboration, Template Method, Strategy, Observer
++ Single responsibility, Decorator, Bridge
++ Object creation, Factory Method, Abstract Factory, Prototype, Builder
++ Object performance, Singleton, Flyweight
++ Interface isolation, Facade, Proxy, Mediator, Adapter
++ State changes, Memento, State
++ Data structure, Composite, Iterator, Chain of Responsibility
++ Behavior changes, Command, Visitor
++ Domain issues, Interpreter
+
+Use with caution
+
+When the code is poorly readable, the requirements are shallow, the changes have not appeared, the system is not a key dependency, the project has no reuse value or will be released
+
+Object model: class A {B* pb; //... };
+
+1. 《2020年非上海生源应届普通高校毕业生个人信息表》
+2. 毕业生推荐表 （找公司要）
+3. 就业协议书
+4. 成绩单 （P.S. 复印件盖章）
+5. 外语等级证书复印件（验原件），复印件盖章“校就业部门”或“校研究生培养处”（校研究生院）
+6. 计算机等级证书复印件（验原件），复印件盖章“校就业部门”或“校研究生培养处”（校研究生院）
+7. 奖项证书的复印件（验原件），复印件盖章“校就业部门”或“校研究生培养处”（校研究生院）
