@@ -1,4 +1,111 @@
 
+
+
+
+WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+11月 24, 2020 4:37:30 下午 com.alibaba.druid.pool.DruidDataSource error
+严重: create connection SQLException, url: jdbc:mysql://localhost:3306/mobiledb, errorCode 0, state 08001
+com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Could not create connection to database server.
+
+@Configuration
+public class WebConfig implements WebMvcConfigurer {
+    @Override
+    public void configurePathMatch(PathMatchConfigurer pathMatchConfigurer) {
+
+    }
+
+    @Override
+    public void configureContentNegotiation(ContentNegotiationConfigurer contentNegotiationConfigurer) {
+
+    }
+
+    @Override
+    public void configureAsyncSupport(AsyncSupportConfigurer asyncSupportConfigurer) {
+
+    }
+
+    @Override
+    public void configureDefaultServletHandling(DefaultServletHandlerConfigurer defaultServletHandlerConfigurer) {
+
+    }
+
+    @Override
+    public void addFormatters(FormatterRegistry formatterRegistry) {
+
+    }
+
+    @Override
+    public void addInterceptors(InterceptorRegistry interceptorRegistry) {
+
+    }
+
+    @Override
+    public void addResourceHandlers(ResourceHandlerRegistry registry) {
+        registry.addResourceHandler("/statics/**").addResourceLocations("classpath:/statics/");
+        // 解决 SWAGGER 404报错
+        registry.addResourceHandler("/swagger-ui.html").addResourceLocations("classpath:/META-INF/resources/");
+        registry.addResourceHandler("/webjars/**").addResourceLocations("classpath:/META-INF/resources/webjars/");
+    }
+
+    @Override
+    public void addCorsMappings(CorsRegistry corsRegistry) {
+
+    }
+
+    @Override
+    public void addViewControllers(ViewControllerRegistry viewControllerRegistry) {
+
+    }
+
+    @Override
+    public void configureViewResolvers(ViewResolverRegistry viewResolverRegistry) {
+
+    }
+
+    @Override
+    public void addArgumentResolvers(List<HandlerMethodArgumentResolver> list) {
+
+    }
+
+    @Override
+    public void addReturnValueHandlers(List<HandlerMethodReturnValueHandler> list) {
+
+    }
+
+    @Override
+    public void configureMessageConverters(List<HttpMessageConverter<?>> list) {
+
+    }
+
+    @Override
+    public void extendMessageConverters(List<HttpMessageConverter<?>> converters) {
+
+    }
+
+    @Override
+    public void configureHandlerExceptionResolvers(List<HandlerExceptionResolver> list) {
+
+    }
+
+    @Override
+    public void extendHandlerExceptionResolvers(List<HandlerExceptionResolver> list) {
+
+    }
+
+    @Override
+    public Validator getValidator() {
+        return null;
+    }
+
+    @Override
+    public MessageCodesResolver getMessageCodesResolver() {
+        return null;
+    }
+}
+
+第二批落户时间11月30日-12月31日。
+需要落户的同学，请在下周五（11.13）之前发邮件（申请落户）给我（shanshan.huang@citi.com），会让你们登记信息之后，由HRSS同事转给中智跟进。
+
 Mode of thinking:
 Bottom thinking: language conversion, compiler conversion, memory model, runtime mechanism
 Abstract thinking: object oriented, component encapsulation, design pattern, architecture pattern
