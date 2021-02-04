@@ -1,156 +1,23 @@
-
-
-
-
-WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
-11月 24, 2020 4:37:30 下午 com.alibaba.druid.pool.DruidDataSource error
-严重: create connection SQLException, url: jdbc:mysql://localhost:3306/mobiledb, errorCode 0, state 08001
-com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Could not create connection to database server.
-
-@Configuration
-public class WebConfig implements WebMvcConfigurer {
-    @Override
-    public void configurePathMatch(PathMatchConfigurer pathMatchConfigurer) {
-
-    }
-
-    @Override
-    public void configureContentNegotiation(ContentNegotiationConfigurer contentNegotiationConfigurer) {
-
-    }
-
-    @Override
-    public void configureAsyncSupport(AsyncSupportConfigurer asyncSupportConfigurer) {
-
-    }
-
-    @Override
-    public void configureDefaultServletHandling(DefaultServletHandlerConfigurer defaultServletHandlerConfigurer) {
-
-    }
-
-    @Override
-    public void addFormatters(FormatterRegistry formatterRegistry) {
-
-    }
-
-    @Override
-    public void addInterceptors(InterceptorRegistry interceptorRegistry) {
-
-    }
-
-    @Override
-    public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        registry.addResourceHandler("/statics/**").addResourceLocations("classpath:/statics/");
-        // 解决 SWAGGER 404报错
-        registry.addResourceHandler("/swagger-ui.html").addResourceLocations("classpath:/META-INF/resources/");
-        registry.addResourceHandler("/webjars/**").addResourceLocations("classpath:/META-INF/resources/webjars/");
-    }
-
-    @Override
-    public void addCorsMappings(CorsRegistry corsRegistry) {
-
-    }
-
-    @Override
-    public void addViewControllers(ViewControllerRegistry viewControllerRegistry) {
-
-    }
-
-    @Override
-    public void configureViewResolvers(ViewResolverRegistry viewResolverRegistry) {
-
-    }
-
-    @Override
-    public void addArgumentResolvers(List<HandlerMethodArgumentResolver> list) {
-
-    }
-
-    @Override
-    public void addReturnValueHandlers(List<HandlerMethodReturnValueHandler> list) {
-
-    }
-
-    @Override
-    public void configureMessageConverters(List<HttpMessageConverter<?>> list) {
-
-    }
-
-    @Override
-    public void extendMessageConverters(List<HttpMessageConverter<?>> converters) {
-
-    }
-
-    @Override
-    public void configureHandlerExceptionResolvers(List<HandlerExceptionResolver> list) {
-
-    }
-
-    @Override
-    public void extendHandlerExceptionResolvers(List<HandlerExceptionResolver> list) {
-
-    }
-
-    @Override
-    public Validator getValidator() {
-        return null;
-    }
-
-    @Override
-    public MessageCodesResolver getMessageCodesResolver() {
-        return null;
-    }
-}
-
-第二批落户时间11月30日-12月31日。
-需要落户的同学，请在下周五（11.13）之前发邮件（申请落户）给我（shanshan.huang@citi.com），会让你们登记信息之后，由HRSS同事转给中智跟进。
-
-Mode of thinking:
-Bottom thinking: language conversion, compiler conversion, memory model, runtime mechanism
-Abstract thinking: object oriented, component encapsulation, design pattern, architecture pattern
-Decomposition vs abstraction
-
-Design Principles:
-
-S.O.L.I.D, Object Combination VS Class Inheritance, Encapsulate Change Points, Target Interface VS Target Implementation
-设计原则：
-Single Responsibility Principle：单一职责原则 
-Open Closed Principle：开闭原则 
-Liskov Substitution Principle：里氏替换原则 
-Interface Segregation Principle：接口隔离原则 
-Dependence Inversion Principle：依赖倒置原则
-对象组合VS类继承，封装变化点，针对接口VS针对实现
-Refactoring techniques: iterative design
-
-Static -> dynamic, early binding -> late binding, inheritance -> composition, compile-time dependency -> runtime dependency, tight coupling -> loose coupling
-
-Pattern classification:
-
-Creation type, structure type, behavior type
-
-Package change angle:
-
-+ Component collaboration, Template Method, Strategy, Observer
-+ Single responsibility, Decorator, Bridge
-+ Object creation, Factory Method, Abstract Factory, Prototype, Builder
-+ Object performance, Singleton, Flyweight
-+ Interface isolation, Facade, Proxy, Mediator, Adapter
-+ State changes, Memento, State
-+ Data structure, Composite, Iterator, Chain of Responsibility
-+ Behavior changes, Command, Visitor
-+ Domain issues, Interpreter
-
-Use with caution
-
-When the code is poorly readable, the requirements are shallow, the changes have not appeared, the system is not a key dependency, the project has no reuse value or will be released
-
-Object model: class A {B* pb; //... };
-
-1. 《2020年非上海生源应届普通高校毕业生个人信息表》
-2. 毕业生推荐表 （找公司要）
-3. 就业协议书
-4. 成绩单 （P.S. 复印件盖章）
-5. 外语等级证书复印件（验原件），复印件盖章“校就业部门”或“校研究生培养处”（校研究生院）
-6. 计算机等级证书复印件（验原件），复印件盖章“校就业部门”或“校研究生培养处”（校研究生院）
-7. 奖项证书的复印件（验原件），复印件盖章“校就业部门”或“校研究生培养处”（校研究生院）
+陈翔六点半
++ 成功的时候，我陪你风生水起；落魄的时候，我陪你东山再起；我会一直陪在你身边，不离不弃。
++ 一个英雄救了我，我会感激他；可你因为选择救我而成为了英雄，所以我爱上了你。——冷檬
++ 聚是一团火，散是满天星。
++ 人什么都能丢，就是不能都上进心。——润土
++ 只要你一直跑一直跑，总能追上我的。
++ 间歇性励志，报复性堕落。——米线儿
++ 唯有贫穷，才能不劳而获。——妹爷
++ 不思进取进取就会落后，落后就要挨打。——毛台
++ 托尔斯泰：我们平等的相爱，因为我们互相了解，互相尊重。
++ 再度相逢，不念过往，眼前人才是余生。
++ 纵有疾风起，人生不言弃。
++ 那些轻松赢到的东西，都已在暗中标好了代价。远离赌博，珍爱生活。
++ 一梦天堂，一念地狱。
++ 离别不说再见，青春永不散场。
++ 没有人，能真正让时光停止。对所爱的一切，不谈永恒，只谈珍惜。
++ 最纯粹的勇敢，并非从不流泪，而是含着眼泪努力奔跑。
++ 失望是一点点累积的，TA的离开，是个很长的决定，只是真正离开的那次，关门声最小。
++ 有时，面子最难让人放下……却最没用。
++ 骗人者，人反骗之；欺人者，人恒欺之。
++ 别让一次欲言又止，带来一生遗憾……
++ 生命同等重要，请不要让别人为你的任性买单。
++ 生活不易，对自己好点。
