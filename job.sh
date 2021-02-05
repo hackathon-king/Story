@@ -9,7 +9,9 @@ load_store_data() {
 
 # file_path="/c/Users/Snow-Angel/tian/data"
 latest_file=$(ls -t ${file_path}| head -n 1)
-echo $latest_file
+echo ${latest_file}
+file_date=$(echo -n $latest_file | tail -c 8)
+echo $file_date
 
 
 if [ -n "$latest_file" ];
@@ -18,6 +20,8 @@ then
 	if [ $? -eq 0 ]; 
 	then
 		echo job ok;
+		touch config
+		echo $latest_file >> config
 	else
 		echo job failed!;
 		# TODO: send alert email
